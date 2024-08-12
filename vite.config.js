@@ -8,8 +8,10 @@ export default defineConfig({
   },
   server: {
     proxy: {
+      '/api': {
         target: 'https://arsalan-estate-backend.vercel.app/', 
         secure: false,
+      },
     },
   },
 
